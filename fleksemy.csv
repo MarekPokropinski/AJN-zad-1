@@ -1,0 +1,36 @@
+rzeczownik,subst,1,rzeczownik
+rzeczownik deprecjatywny,depr,1,rzeczownik
+liczebnik główny,num,0,inny
+liczebnik zbiorowy,numcol,0,inny
+przymiotnik,adj,3,przymiotnik
+przymiotnik przyprzym.,adja,3,przymiotnik
+przymiotnik poprzyimkowy,adjp,3,przymiotnik
+przymiotnik predykatywny,adjc,3,przymiotnik
+przysłówek,adv,0,inny
+zaimek nietrzecioosobowy,ppron12,0,inny
+zaimek trzecioosobowy,ppron3,0,inny
+zaimek siebie,siebie,0,inny
+forma nieprzeszła,fin,2,czasownik
+forma przyszła być,bedzie,2,czasownik
+aglutynant być,aglt,2,czasownik
+pseudoimiesłów,praet,2,czasownik
+rozkaźnik,impt,2,czasownik
+bezosobnik,imps,2,czasownik
+bezokolicznik,inf,2,czasownik
+im. przys. współczesny,pcon,2,czasownik
+im. przys. uprzedni,pant,2,czasownik
+odsłownik,ger,2,czasownik
+im. przym. czynny,pact,2,czasownik
+im. przym. bierny,ppas,2,czasownik
+winien,winien,0,inny
+predykatyw,pred,0,inny
+przyimek,prep,0,inny
+spójnik współrzędny,conj,0,inny
+spójnik podrzędny,comp,0,inny
+kublik,qub,0,inny
+skrót,brev,0,inny
+burkinostka,burk,0,inny
+wykrzyknik,interj,0,inny
+interpunkcja,interp,0,inny
+ciało obce,xxx,0,inny
+forma nierozpoznana,ign,0,inny
