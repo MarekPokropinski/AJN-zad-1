@@ -1,5 +1,4 @@
-wiki_test_34_categories_data/
-wiki_train_34_categories_data/
+wiki_data/
 poleval/
 kgr10.plain.skipgram.dim300.neg10.bin
 .ipynb_checkpoints/
