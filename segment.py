@@ -6,7 +6,7 @@ sentence_exceptions = [
     (r'([Mm]gr\. $)', r'(.+)'),
     (r'([Ii]nż\. $)', r'(.+)'),
     (r'([Tt]zn\. $)', r'(.+)'),
-    (r'([Tt]z\. $)', r'(.+)'),
+    (r'([Tt]zw\. $)', r'(.+)'),
 ]
 
 sentence_rules = [
@@ -65,14 +65,16 @@ word_exceptions = [
 
 word_rules = [
     (r'([A-ZŻŹĆŃÓŁĘĄŚa-zżźćńółęąś1-9]) $', r'([A-ZŻŹĆŃÓŁĘĄŚa-zżźćńółęąś1-9])'),
-    (r'([a-zżźćńółęąś1-9])$', r'([,\.;\!\?–\-\*\/\+\^\&])'),
-    (r'([,\.;\!\?–\-\*\/\+\^\&])$', r'.?'),
+    (r'([a-zżźćńółęąś1-9])$', r'([,\.;\!\?–\*\/\+\^\&])'),
+    (r'([,\.;\!\?–\*\/\+\^\&])$', r'.?'),
 ]
 
 word_rules = [(re.compile(rule[0]), re.compile(rule[1]))
                   for rule in word_rules]
 word_exceptions = [(re.compile(rule[0]), re.compile(rule[1]))
                        for rule in word_exceptions]
+
+is_symbol = re.compile(r'[,\.;\!\?–\*\/\+\^\&]')
 
 for sentence in sentences:
     print('Sentence:', sentence)
@@ -93,6 +95,8 @@ for sentence in sentences:
 
     splits.append(pos)
     words = [sentence[a:b].rstrip() for a, b in zip(splits, splits[1:])]
+
     print("Wyrazy:")
     for i, word in enumerate(words):
-        print(f'{i}: "{word}"')
+        type = 'punctuation' if is_symbol.match(word) else 'word'
+        print(f'{i}: {type} - "{word}"')
